@@ -573,6 +573,7 @@ Engineering student in **Data Science** at the National School of Electronics an
 
 - **GitHub:** [@marwensellami](https://github.com/marwensellami)
 - **LinkedIn:** [Marwen Sellami](https://www.linkedin.com/)
+- **Mail:** marwen.sellami111@gmail.com
 - **Location:** Sfax, Tunisia
 
 For professional inquiries, please contact me through my LinkedIn profile.
@@ -589,7 +590,5 @@ For professional inquiries, please contact me through my LinkedIn profile.
 - [XAMPP](https://www.apachefriends.org/) — Local development environment.
 
 ---
-
-**Made with ❤️ in Tunisia 🇹🇳**
 
 ⭐ If you find this project useful, consider giving the repository a star!
