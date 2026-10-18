@@ -1,0 +1,408 @@
+# ============================================
+# FICHIER .gitignore - Marketplace Covoiturage
+# ============================================
+
+# ============================================
+# 1. CONFIGURATION SYSTÈME (OS)
+# ============================================
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+.fseventsd
+
+# Linux
+*~
+.directory
+.Trash-*
+.nfs*
+
+# ============================================
+# 2. IDE / ÉDITEURS DE CODE
+# ============================================
+
+# Visual Studio Code
+.vscode/
+!.vscode/settings.json.example
+!.vscode/launch.json.example
+!.vscode/extensions.json.example
+
+# JetBrains (PHPStorm, WebStorm, IntelliJ)
+.idea/
+*.iml
+*.ipr
+*.iws
+.idea_modules/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# NetBeans
+nbproject/
+nbproject/private/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# Eclipse
+.project
+.classpath
+.settings/
+.buildpath
+
+# Atom
+.atom/
+.atom-build.json
+.atom-snippets.cson
+
+# Vim
+*.swp
+*.swo
+*~
+.vim/
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# ============================================
+# 3. FICHIERS DE CONFIGURATION SENSIBLES
+# ============================================
+
+# Configuration locale
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+.env.*.local
+*.env
+
+# Fichiers de config personnalisés
+config/local_config.php
+config/db_connection.local.php
+config/app_settings.local.php
+config/secrets.php
+
+# Clés et certificats
+*.key
+*.pem
+*.p12
+*.pfx
+*.crt
+*.cer
+
+# Fichiers de credentials
+credentials.json
+secrets.json
+service-account.json
+
+# ============================================
+# 4. LOGS ET FICHIERS TEMPORAIRES
+# ============================================
+
+# Fichiers de log
+*.log
+logs/
+log/
+*.log.*
+error_log
+access_log
+
+# Dossier temporaire
+tmp/
+temp/
+.cache/
+cache/
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+*.orig
+
+# Fichiers de session PHP
+sess_*
+sessions/
+/tmp/sessions/
+
+# ============================================
+# 5. UPLOADS ET MÉDIAS UTILISATEUR
+# ============================================
+
+# Images uploadées par les utilisateurs
+uploads/
+uploads/images/
+uploads/avatars/
+uploads/vehicles/
+uploads/documents/
+
+# Fichiers multimédias (garder la structure mais pas les fichiers)
+assets/images/uploads/
+assets/uploads/
+
+# Mais garder les images d'exemple
+!assets/images/sample/
+!assets/images/og-image.jpg
+!assets/images/favicon.ico
+
+# ============================================
+# 6. DÉPENDANCES ET PACKAGES
+# ============================================
+
+# Composer (PHP)
+/vendor/
+!vendor/.gitkeep
+composer.phar
+composer.lock
+
+# Node.js / NPM
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+.pnpm-debug.log*
+
+# Bower
+bower_components/
+
+# ============================================
+# 7. BUILD ET DISTRIBUTION
+# ============================================
+
+# Fichiers compilés
+dist/
+build/
+public/build/
+*.min.js.map
+*.min.css.map
+
+# Assets compilés
+assets/css/compiled/
+assets/js/compiled/
+assets/bundles/
+
+# Rapports de couverture de tests
+coverage/
+*.lcov
+.nyc_output/
+
+# ============================================
+# 8. BASES DE DONNÉES ET EXPORTS
+# ============================================
+
+# Dumps SQL (sauf le schéma initial)
+*.sql.gz
+*.sql.bz2
+*dump.sql
+*backup.sql
+!config/database.sql
+
+# Fichiers de données locales
+database.sqlite
+database.sqlite3
+*.db
+
+# ============================================
+# 9. FICHIERS SYSTÈME XAMPP/WAMP/MAMP
+# ============================================
+
+# XAMPP
+/xampp/
+/htdocs/.htaccess.local
+
+# WAMP
+/wamp/
+
+# MAMP
+/mamp/
+
+# Apache
+.htaccess.local
+.htpasswd
+apache2.conf.local
+
+# ============================================
+# 10. SÉCURITÉ ET BACKUP
+# ============================================
+
+# Sauvegardes
+backup/
+backups/
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# Mais garder les assets versionnés
+!assets/**/*.zip
+
+# Fichiers sensibles
+*.bak
+*.sql.bak
+*.php.bak
+*.orig
+*.rej
+
+# ============================================
+# 11. TESTS ET OUTILS DE DEV
+# ============================================
+
+# PHPUnit
+.phpunit.result.cache
+phpunit.xml
+phpunit.xml.dist
+
+# PHP CodeSniffer
+.phpcs.cache
+.phpcs.xml
+
+# PHPStan
+.phpstan.cache
+phpstan.neon
+
+# Coverage
+coverage/
+clover.xml
+
+# Tests temporaires
+test.php
+test_*.php
+*_test.php
+tests/tmp/
+
+# ============================================
+# 12. FICHIERS SPÉCIFIQUES AU PROJET
+# ============================================
+
+# Cache de l'application
+cache/
+/cache/
+app/cache/
+storage/cache/
+
+# Sessions de l'application
+storage/sessions/
+app/sessions/
+
+# Logs de l'application
+storage/logs/
+app/logs/
+
+# Fichiers de mail simulé (développement)
+/mails/
+*.eml
+
+# Fichiers d'export/import
+/exports/
+/imports/
+*.csv
+!config/sample-data.csv
+
+# Debug et profiling
+xdebug/
+.xdebug/
+*.xdebug
+xhprof/
+tideways/
+
+# ============================================
+# 13. FICHIERS DE DÉPLOIEMENT
+# ============================================
+
+# Docker
+.docker/
+Dockerfile.local
+docker-compose.override.yml
+
+# CI/CD
+.github/workflows/*.local.yml
+.gitlab-ci.local.yml
+
+# Déploiement
+deploy.php
+deploy.sh
+deploy/
+
+# ============================================
+# 14. DIVERS
+# ============================================
+
+# Archives
+*.zip
+*.tar.gz
+*.tgz
+
+# Fichiers de projet
+.project
+.settings/
+*.sublime-*
+
+# Notes personnelles
+notes.txt
+TODO.txt
+*.md.bak
+scratchpad.*
+
+# Fichiers de configuration locaux
+*.local.php
+*.local.js
+*.local.css
+config.local.json
+
+# Excel et documents
+*.xlsx
+*.xls
+*.doc
+*.docx
+!README.md
+!docs/*.md
+
+# ============================================
+# NOTES IMPORTANTES
+# ============================================
+#
+# 1. Ce fichier .gitignore empêche Git de suivre :
+#    - Les fichiers de configuration sensibles
+#    - Les fichiers de log et temporaires
+#    - Les uploads utilisateur
+#    - Les dépendances (vendor, node_modules)
+#    - Les fichiers de build et cache
+#    - Les fichiers système et IDE
+#
+# 2. Pour forcer l'ajout d'un fichier ignoré :
+#    git add -f fichier.php
+#
+# 3. Pour voir quels fichiers sont ignorés :
+#    git status --ignored
+#
+# 4. Pour vérifier pourquoi un fichier est ignoré :
+#    git check-ignore -v chemin/vers/fichier
+#
+# 5. Après avoir modifié .gitignore, si des fichiers
+#    déjà suivis doivent être ignorés maintenant :
+#    git rm --cached fichier
+#    git commit -m "Remove file from repository"
+#
+# ============================================
